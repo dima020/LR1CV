@@ -54,6 +54,7 @@ while True:
     #cv2.imwrite('1.3_result.jpg')
     k = cv2.waitKey(0)
     if k == ord('q'):
+        #cv2.imwrite('1.3_result.jpg')
         break
     if k == ord(' '):
         p = not p

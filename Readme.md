@@ -140,3 +140,5 @@ import numba
 Execution time of the program is-  1.6359963417053223
 Время выполнения программы без использования с Numba\
 Execution time of the program is-  2.257737159729004
+
+[Бинеризация](1.3.png)
