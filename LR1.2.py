@@ -51,9 +51,11 @@ while True:
         print("Execution time of the program is- ", time.time() - start_time)
 
     cv2.imshow("result", img)
-
+    cv2.imwrite('outputs/1.2_result.jpg', img)
     k = cv2.waitKey(10)
+
     if k == ord('q'):
+
         break
     if k == ord(' '):
         p = not p

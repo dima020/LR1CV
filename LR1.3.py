@@ -30,7 +30,7 @@ cap.set(4, 300)
 
 while True:
 
-    img = cv2.imread('image_1.jpg')
+    img = cv2.imread('image_3.jpg')
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     ret, img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)  # cv2.THRESH_BINARY=0?
     #print(img.shape)
@@ -51,10 +51,9 @@ while True:
         img = n0
         print("Execution time of the program is- ", time.time()-start_time)
     cv2.imshow("result", img)
-    #cv2.imwrite('1.3_result.jpg')
+    cv2.imwrite('outputs/3.3_result.jpg',img)
     k = cv2.waitKey(0)
     if k == ord('q'):
-        #cv2.imwrite('1.3_result.jpg')
         break
     if k == ord(' '):
         p = not p
